@@ -1,14 +1,21 @@
+import Banner from './components/Banner';
+import Footer from './components/Footer';
+import Header from './components/Header';
+import Navigation from './components/Navigation';
+import News from './components/News';
+import Slider from './components/Slider';
+
 function App() {
   return (
     <>
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100">
-      <h1 className="text-4xl font-bold text-blue-500">Hello Tailwind!</h1>
-      <p className="mt-2 text-gray-600">Vite + React + TS + Tailwind is ready ✅</p>
-    </div>
-
-      <a href="/dash">x dash</a>
+      <Header />
+      <Banner />
+      <Navigation />
+      <Slider />
+      <News />
+      <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
