@@ -14,7 +14,7 @@ const Button = ({ children, disabled = false, variant = 'primary' }: Props) => {
   };
   return (
     <button
-      className={`font-barlow h-9 cursor-pointer rounded-full px-6 text-base font-[900] uppercase italic transition-all duration-300 ${variants[variant]} ${disabled ? 'opacity-40' : ''}`}
+      className={`font-barlow h-9 cursor-pointer rounded-full px-6 text-base font-[900] uppercase italic transition-all duration-300 lg:px-8 ${variants[variant]} ${disabled ? 'opacity-40' : ''}`}
     >
       {children}
     </button>

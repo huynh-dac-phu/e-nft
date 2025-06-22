@@ -6,7 +6,7 @@ const items = ['home', 'items1', 'items2', 'items3', 'items4'];
 
 const Sidebar = ({ isOpenSidebar }: Props) => {
   const currentPath = 'home';
-  const active = 'text-yellow bg-neutral-secondary rounded-full';
+  const active = 'text-yellow bg-neutral-secondary';
 
   return (
     <nav
@@ -15,10 +15,10 @@ const Sidebar = ({ isOpenSidebar }: Props) => {
       <ul className="flex flex-col gap-4 p-5">
         {items.map(item => (
           <li
-            className={`text-neutral h-12 w-full text-center text-sm leading-12 font-medium uppercase ${item === currentPath ? active : ''} active:text-yellow active:bg-neutral-secondary rounded-full transition-all duration-300`}
+            className={`text-neutral h-12 w-full text-center text-sm leading-12 font-medium uppercase ${item === currentPath ? active : ''} active:text-yellow active:bg-neutral-secondary rounded-[100px] transition-all duration-300`}
             key={item}
           >
-            <a className="block h-full w-full" href={`#${item}`}>
+            <a className="block h-full w-full" href="/">
               {item}
             </a>
           </li>

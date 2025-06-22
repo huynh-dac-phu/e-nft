@@ -4,8 +4,8 @@ type Props = {};
 
 const Banner = ({}: Props) => {
   return (
-    <div className="relative h-45 lg:h-112.5">
-      <img src={BannerBg} className="h-full w-full object-cover" alt="Banner" />
+    <div className="relative h-45 md:h-75 lg:h-112.5">
+      <img src={BannerBg} className="h-full w-full object-cover sm:object-[0_40%]" alt="Banner" />
       <ul className="absolute bottom-2 left-1/2 flex -translate-x-1/2 gap-1">
         {Array.from({ length: 9 }).map((_, index) => (
           <li

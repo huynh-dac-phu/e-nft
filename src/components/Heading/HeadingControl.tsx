@@ -1,9 +1,9 @@
 import AngleLeft from '@/assets/svgs/angle-left.svg?react';
 import AngleRight from '@/assets/svgs/angle-right.svg?react';
-import ButtonIcon from '@/components/Button/ButtonIcon';
-import Heading from '@/components/Heading';
+import { ButtonIcon } from '@/components/Button';
+import Heading from './Heading';
 
-const Control = ({
+const HeadingControl = ({
   title,
   className,
   onNext,
@@ -29,4 +29,4 @@ const Control = ({
   );
 };
 
-export default Control;
+export default HeadingControl;

@@ -1,4 +1,4 @@
-import Control from '@/components/Slider/Control';
+import { HeadingControl } from '@/components/Heading';
 import Slider1 from '@/assets/imgs/slider/slider-1.png';
 import Slider2 from '@/assets/imgs/slider/slider-2.png';
 import Slider3 from '@/assets/imgs/slider/slider-3.png';
@@ -28,7 +28,7 @@ const Slider = ({}: Props) => {
 
   return (
     <div className="mb-10">
-      <Control
+      <HeadingControl
         title="New NFT Collections"
         className="mb-2"
         onNext={handleNext}
@@ -36,7 +36,10 @@ const Slider = ({}: Props) => {
       />
       <ul className="flex gap-4">
         {currentIndex.map((slider, index) => (
-          <li className="h-35 w-25.5 min-w-25.5 lg:h-61.25 lg:w-45" key={index}>
+          <li
+            className="h-35 w-25.5 min-w-25.5 md:h-55 md:w-1/5 md:min-w-1/5 lg:h-61.25 lg:min-w-45"
+            key={index}
+          >
             <img
               className="h-full w-full rounded-[7px] object-cover"
               src={slider}

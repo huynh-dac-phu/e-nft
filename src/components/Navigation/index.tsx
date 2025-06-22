@@ -36,11 +36,14 @@ const navs = [
 function Navigation({}: Props) {
   return (
     <div className="bg-black-tertiary mb-10">
-      <ul className="mx-auto flex h-23 items-center justify-between lg:max-w-[1128px]">
+      <ul className="mx-auto flex h-23 items-center justify-between md:h-30 lg:max-w-[1128px]">
         {navs.map(nav => (
-          <li key={nav.name} className="flex flex-1 cursor-pointer flex-col items-center gap-2">
+          <li
+            key={nav.name}
+            className="flex flex-1 cursor-pointer flex-col items-center gap-2 md:gap-3"
+          >
             {nav.icon}
-            <span className="px-1 text-center text-xs leading-3 font-medium text-white uppercase">
+            <span className="px-1 text-center text-xs leading-3 font-medium text-white uppercase md:text-sm md:font-normal">
               {nav.name}
             </span>
           </li>
