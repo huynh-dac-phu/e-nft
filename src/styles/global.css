@@ -1,5 +1,22 @@
 @import "tailwindcss";
+@theme {
+  --color-black: #131415;
+  --color-black-secondary: #1F1F1F;
+  --color-black-tertiary: #1F2023;
+  --color-white: #fff;
+  --color-neutral: #D2D2D2;
+  --color-neutral-secondary: #383A42;
+  --color-yellow: #FFC700;
+  --color-yellow-secondary: #C79B12;
+  --color-yellow-tertiary: #FFE8AB;
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+  --font-barlow: 'Barlow Semi Condensed', sans-serif;
+  --font-neue: 'Neue Haas Grotesk Display Pro', sans-serif;
+}
+
+body {
+  @apply bg-black text-white;
+  font-family: 'Neue Haas Grotesk Display Pro', 'Barlow Semi Condensed',sans-serif;
+  position: relative;
+}
+
